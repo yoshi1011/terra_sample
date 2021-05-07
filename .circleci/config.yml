@@ -46,7 +46,7 @@ jobs:
             docker push ${ECR_DOMAIN}:$CIRCLE_SHA1
             docker push ${ECR_DOMAIN}:latest
 workflows:
-  versions: 2.1
+  version: 2.1
   test:
     jobs:
       - build
