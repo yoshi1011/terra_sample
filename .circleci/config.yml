@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: bundle update
-          command: gem install bundler:2.0.2
+          command: gem install bundler:2.2.7
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "Gemfile.lock" }}
